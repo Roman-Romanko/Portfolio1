@@ -1,27 +1,15 @@
-import Home from "../assets/Home.png"
-import Profile from "../assets/Profile.png"
-import Work from "../assets/Work.png"
-import Document from "../assets/Document.png"
-import Chat from "../assets/Chat.png"
+import HomeIcon from "../assets/Home.png"
+import ProfileIcon from "../assets/Profile.png"
+import WorkIcon from "../assets/Work.png"
+import DocumentIcon from "../assets/Document.png"
+import ChatIcon from "../assets/Chat.png"
+
+import { Home } from "../pages/Home"
+
 export const navItems = [
-    {
-        id: 0,
-        icon: Home,
-    },
-    {
-        id: 1,
-        icon: Profile,
-    },
-    {
-        id: 2,
-        icon: Work,
-    },
-    {
-        id: 3,
-        icon: Document,
-    },
-    {
-        id: 4,
-        icon: Chat,
-    }
+    { label: "Home", icon: HomeIcon, path: "/", element: <Home />},
+    { label: "About", icon: ProfileIcon, path: "/about", element: <Home />},
+    { label: "Team", icon: WorkIcon, path: "/", element: <Home />},
+    { label: "Portfolio", icon: DocumentIcon, path: "/", element: <Home />},
+    { label: "Contact", icon: ChatIcon, path: "/", element: <Home />}
 ]
