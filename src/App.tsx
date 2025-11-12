@@ -14,7 +14,7 @@ export const App = () => {
     <Router>
       <div className='overflow-x-hidden flex'>
         <Sidebar />
-        <div className="h-screen">
+        <div className="h-screen mx-40 w-full">
           <Routes>
             {navItems.map((item) => (
               <Route path={item.path} element={item.element} />

@@ -5,7 +5,7 @@ export const Sidebar = () => {
     const location = useLocation();
 
     return (
-        <nav className="w-20 bg-orange-400 h-screen flex flex-col justify-between py-5 rounded-br-2xl rounded-tr-2xl">
+        <nav className="w-30 bg-orange-400 h-screen flex flex-col justify-between py-5 rounded-br-2xl rounded-tr-2xl">
             <h1 className="">Logo</h1>
             <div className="flex flex-col items-center">
                 {navItems.map((index) => (
