@@ -13,13 +13,13 @@ export const App = () => {
   return (
     <Router>
       <div className='overflow-x-hidden flex'>
-        <Sidebar />
-        <div className="h-screen mx-40 w-full">
-          <Routes>
-            {navItems.map((item) => (
-              <Route path={item.path} element={item.element} />
-            ))}
-          </Routes>
+        <div className="w-20 max-lg:hidden">
+          <Sidebar />
+        </div>
+        <div className="mx-40 max-lg:mx-0 w-full overflow-y-auto">
+          {navItems.map((item) => (
+            <div id={item.label}>{item.element}</div>
+          ))}
         </div>
       </div>
     </Router>
